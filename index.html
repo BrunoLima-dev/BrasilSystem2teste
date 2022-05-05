@@ -4,66 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">   
     <link rel="stylesheet" href="/css/bootstrap.min.css">
-
-    <title>SiSoL</title>
-    <style>
-        #tema {
-            text-align: center;
-            color: white;
-            border: 1px solid black;
-            background-color: black;
-            padding: 5px 5px;
-        }
-
-        #tabela {
-            text-align: center;
-            border: 1px solid black;
-            background-color: white;
-            padding: 5px 5px;
-            border-radius: 10px;
-            
-        }
-
-        #btn {
-            margin-bottom: 5em;
-            margin-top: 1em;
-            margin-left: 1%;
-        }
-        
-        .custom-select {            
-            margin-left: 1%;
-        }
-       
-        #title {
-            margin-left: 30%;
-            margin-top: 1em;
-            margin-bottom: 1em;
-            text-align: center;
-            width: 40%;
-        }        
-
-        .row {
-            padding: 10px;
-        }
-
-        .container {         
-            align-items: center;
-        }
-
-        img {
-            width: 15%;
-            float: left;
-        }
-        body {
-            background-color: #dad2d2;
-        }
-        
-        label {
-            font-size: 25px;
-           
-        }
-    </style>
-
+    <link rel="stylesheet" href="/style/css">
+    <title>SiSoL</title>  
   </head>
   <body>
     <h1 id="tema">Sistema para Solicitação de Livros - SiSoLi</h1>
@@ -71,7 +13,7 @@
         <div class="col">
             <img src="https://brasilsystems.com.br/img/logo_branco_tansparente.png" alt="Brasil System">
             <h1 id="title"><b>Solicitação de Livros</b></h1>
-            <form>
+            <form id="frm">
                 <div class="form-group">
                     <select class="custom-select">
                         <option class="selecao" nome="selecao" id="selecao" selected>Selecione Vinculo</option>
@@ -94,7 +36,7 @@
                     <div class="row">
                         <div class="col">
                         <label for="issn">ISSN</label>
-                        <input type="text" id="issn" name="issn" class="form-control" placeholder="Digite o Issn do livro">
+                        <input type="number" id="issn" name="issn" class="form-control" placeholder="Digite o Issn do livro">
                         </div>
                         <div class="col">
                         <label for="editora">Editora</label>
@@ -105,17 +47,17 @@
                     <div class="row">
                         <div class="col">
                         <label for="edicao">Edição</label>
-                        <input type="text" id="edicao" name="edicao" class="form-control" placeholder="Digite o Edição do livro">
+                        <input type="number" id="edicao" name="edicao" class="form-control" placeholder="Digite o Edição do livro">
                         </div>
                         <div class="col">
                         <label for="ano">Ano</label>
-                        <input type="text" id="ano" name="ano" class="form-control" placeholder="Digite o Ano de publicação">
+                        <input type="number" id="ano" name="ano" class="form-control" placeholder="Digite o Ano de publicação">
                         </div>
                     </div>
                 </div>
             </form>                        
         </div>  
-        <button class="btn btn-primary" id="btn" type="submit">Button</button>
+        <button class="btn btn-primary" id="btn" type="submit">Solicitar livro</button>
         <h1 id="tabela">Tabela de solicitação</h1>     
         <table class="table">
             <thead>

@@ -1,0 +1,55 @@
+ #tema {
+            text-align: center;
+            color: white;
+            border: 1px solid black;
+            background-color: black;
+            padding: 5px 5px;
+        }
+
+        #tabela {
+            text-align: center;
+            border: 1px solid black;
+            background-color: white;
+            padding: 5px 5px;
+            border-radius: 10px;
+            
+        }
+
+        #btn {
+            margin-bottom: 5em;
+            margin-top: 1em;
+            margin-left: 1%;
+        }
+        
+        .custom-select {            
+            margin-left: 1%;
+        }
+       
+        #title {
+            margin-left: 30%;
+            margin-top: 1em;
+            margin-bottom: 1em;
+            text-align: center;
+            width: 40%;
+        }        
+
+        .row {
+            padding: 10px;
+        }
+
+        .container {         
+            align-items: center;
+        }
+
+        img {
+            width: 15%;
+            float: left;
+        }
+        body {
+            background-color: #dad2d2;
+        }
+        
+        label {
+            font-size: 25px;
+           
+        }
