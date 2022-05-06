@@ -13,10 +13,11 @@
         <div class="col">
             <img src="https://brasilsystems.com.br/img/logo_branco_tansparente.png" alt="Brasil System">
             <h1 id="title"><b>Solicitação de Livros</b></h1>
+            <!--Inicio Formulario-->
             <form id="frmSolicitar">
                 <div class="form-group">
-                    <select class="custom-select">
-                        <option class="selecao" nome="selecao" id="selecao" selected>Selecione Vinculo</option>
+                    <select class="custom-select" id="select">
+                        <option class="selecao" name="selecao" id="selecao" selected>Selecione Vinculo</option>
                         <option value="1">Docente</option>
                         <option value="2">Discente</option>
                         <option value="3">técnico</option>
@@ -55,11 +56,13 @@
                         </div>
                     </div>
                 </div>
-            </form>                        
+            </form>   
+            <!--Fim Formulario-->                     
         </div>  
         <button class="btn btn-primary" id="btnSolicitar" type="submit">Solicitar livro</button>
-        <h1 id="tabela">Tabela de solicitação</h1>     
-        <table class="table">
+        <h1 id="tabela">Tabela de solicitação</h1>   
+        <!--Inicio Tabela-->  
+        <table class="table" id="table">
             <thead>
               <tr>
                 <th scope="col">Vinculo</th>
@@ -101,6 +104,7 @@
               </tr>
             </tbody>
           </table>
+        <!--Fim Tabela-->
     </div>
     <!-- Optional JavaScript -->    
     <script src="/js/bootstrap.min.js" defer></script>
