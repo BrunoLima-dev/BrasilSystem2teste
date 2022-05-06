@@ -15,7 +15,7 @@
             
         }
 
-        #btn {
+        #btnSolicitar {
             margin-bottom: 5em;
             margin-top: 1em;
             margin-left: 1%;
