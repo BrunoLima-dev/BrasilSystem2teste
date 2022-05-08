@@ -8,15 +8,16 @@ btnSolicitar.addEventListener("click", function (event) {
   var frmSolicitar = document.getElementById("frmSolicitar");
   const select = document.getElementById("select");
 
+  
+
   btnBloquear.addEventListener("click", (event)); {
     var ano = document.getElementById("ano"); 
        
 
     if (frmSolicitar.ano.value < 1900 || frmSolicitar.ano.value > 2019 ) {
         ano.setCustomValidity("Ano inválido");
-        ano.reportValidity();
+        ano.reportValidity();       
         alert("Digite Ano entere entre 1900 e 2019");
-        ano.block();        
       }
     };
         
@@ -94,13 +95,15 @@ function startTimer(duration, display) {
     
   }, 1000);
 }
-
-
   window.onload = function () {
-    var duration = 3600 * 1; // Conversão para segundos
+    var duration = 3599 * 1; // Conversão para segundos
     var display = document.querySelector('#time');
     startTimer(duration, display);
   }
+  //Fim Contador regressivo
+
+  
+
  
 
   
