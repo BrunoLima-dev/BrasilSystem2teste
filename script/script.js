@@ -57,4 +57,3 @@ btnSolicitar.addEventListener("click", function (event) {
 
     tabelaSolicita.appendChild(linhaTabela);
 
-})
