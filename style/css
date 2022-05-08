@@ -1,3 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+#time {
+    font-family: 'Poppins', sans-serif;
+    font-size: 50px;
+    font-weight: 600;
+    color: rgb(10, 40, 24);
+    text-align: right;
+    margin-top: 50px;
+    
+}
+
  #tema {
             text-align: center;
             color: white;
@@ -19,6 +38,13 @@
             margin-bottom: 5em;
             margin-top: 1em;
             margin-left: 1%;
+            cursor: pointer;
+            border-radius: 10px;
+        }
+
+        #btnSolicitar:hover {
+            background-color: #4ECA64;
+            color: rgb(227, 217, 17);
         }
         
         .custom-select {            
@@ -50,6 +76,5 @@
         }
         
         label {
-            font-size: 25px;
-           
+            font-size: 25px;           
         }
