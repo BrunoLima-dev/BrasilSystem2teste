@@ -3,6 +3,7 @@ var autor = document.getElementById("autor");
 var titulo = document.getElementById("titulo");
 
 // Evento de Click pra criação de elementos e deletar elementos
+
 btnSolicitar.addEventListener("click", function (event) {
   event.preventDefault();
 
