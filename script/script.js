@@ -28,6 +28,9 @@ btnSolicitar.addEventListener("click", function (event) {
   var btnDeleta = document.createElement("button");
 
   btnDeleta.innerHTML = "Deletar";
+  btnDeleta.setAttribute("class", "btn btn-danger");
+
+  
 
   //Adicionar o conteudo de cada celular
   colunaVinculo.textContent = text;
@@ -42,14 +45,14 @@ btnSolicitar.addEventListener("click", function (event) {
   var tabelaSolicita = document.getElementById("table").querySelector("tbody");
 
   //inserindo todas as celulas dentro da linha
-  tabelaSolicita.appendChild(colunaVinculo).ondblclick = myfunction();
-  tabelaSolicita.appendChild(colunaTitulo).ondblclick = myfunction();
-  tabelaSolicita.appendChild(colunaAutor).ondblclick = myfunction();
-  tabelaSolicita.appendChild(colunaEdicao).ondblclick = myfunction();
-  tabelaSolicita.appendChild(colunaISSN).ondblclick = myfunction();
-  tabelaSolicita.appendChild(colunaAno).ondblclick = myfunction();
-  tabelaSolicita.appendChild(colunaEditora).ondblclick = myfunction();
-  tabelaSolicita.appendChild(btnDeleta).ondblclick = myfunction();
+  tabelaSolicita.appendChild(colunaVinculo);
+  tabelaSolicita.appendChild(colunaTitulo);
+  tabelaSolicita.appendChild(colunaAutor);
+  tabelaSolicita.appendChild(colunaEdicao);
+  tabelaSolicita.appendChild(colunaISSN);
+  tabelaSolicita.appendChild(colunaAno);
+  tabelaSolicita.appendChild(colunaEditora);
+  tabelaSolicita.appendChild(btnDeleta);
 
   tabelaSolicita.appendChild(linhaTabela);
  
